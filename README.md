@@ -15,7 +15,8 @@ o	How can we classify credit card transactions as fraudulent or non-fraudulent b
 
 #### Data Sources
 o	The data will be sourced from publicly available datasets such as the **Kaggle Credit Card Fraud Detection dataset**, or, with proper authorization, transaction data from financial institutions.
-  - Refer to the link:  https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/download
+  - Refer to the link:  https://www.kaggle.com/datasets/ealaxi/paysim1
+    
 
 #### Methodology
 What methods are you using to answer the question?
