@@ -19,7 +19,12 @@ o	The data will be sourced from publicly available datasets such as the **Kaggle
     
 
 #### Methodology
-What methods are you using to answer the question?
+
+We follow a step-by-step process to solve the machine learning classification problem, guided by the standardized CRISP-DM framework. We begin by understanding the business problem under analysis. This is followed by exploratory data analysis, which includes data cleaning and preprocessing—such as handling categorical variables.
+
+Next, we train and model the data using a variety of supervised learning algorithms, including Logistic Regression, Decision Trees, Random Forests, Support Vector Machines (SVM), k-Nearest Neighbors (KNN), and Neural Networks. Hyperparameter tuning is performed using GridSearchCV, along with stratified 5-fold cross-validation to ensure robustness.
+
+Each model is evaluated individually based on performance metrics under different parameter configurations. Additionally, we explore anomaly detection techniques to address class imbalance. Model performance is assessed using evaluation metrics such as the classification report and confusion matrix, focusing on precision, recall, and F1-score. Finally, we conclude by summarizing key insights and interesting findings from our analysis. 
 
 #### Results
 What did your research find?
