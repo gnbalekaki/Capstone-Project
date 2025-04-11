@@ -1,4 +1,4 @@
-### ML Model to detect credit card Fraud transactions. 
+### Capstone Project: ML Model to detect credit card Fraud transactions (Initial Report). 
 
 **Gerald Balekaki**
 
