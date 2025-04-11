@@ -22,7 +22,7 @@ o	The data will be sourced from publicly available datasets such as the **Kaggle
 
 We follow a step-by-step process to solve the machine learning classification problem, guided by the standardized CRISP-DM framework. We begin by understanding the business problem under analysis. This is followed by exploratory data analysis, which includes data cleaning and preprocessing—such as handling categorical variables.
 
-Next, we train and model the data using a variety of supervised learning algorithms, including Logistic Regression, Decision Trees, Random Forests, Support Vector Machines (SVM), k-Nearest Neighbors (KNN), and Neural Networks. Hyperparameter tuning is performed using GridSearchCV, along with stratified 5-fold cross-validation to ensure robustness.
+Next, we train and model the data using a variety of supervised learning algorithms, including Logistic Regression, Decision Trees, Support Vector Machines (SVM), k-Nearest Neighbors (KNN), and Neural Networks. Hyperparameter tuning is performed using GridSearchCV, along with stratified 5-fold cross-validation to ensure robustness.
 
 Each model is evaluated individually based on performance metrics under different parameter configurations. Additionally, we explore anomaly detection techniques to address class imbalance. Model performance is assessed using evaluation metrics such as the classification report and confusion matrix, focusing on precision, recall, and F1-score. Finally, we conclude by summarizing key insights and interesting findings from our analysis. 
 
@@ -30,13 +30,9 @@ Each model is evaluated individually based on performance metrics under differen
 What did your research find?
 
 #### Next steps
-What suggestions do you have for next steps?
-
-#### Outline of project
-
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+We suggest running a few more tests, especially to check how often transactions are wrongly flagged as fraud or missed. It’s worth looking deeper when a model seems too perfect. We might also try simpler models if they perform just as well. Finally, we plan to present our findings in a clear way that both technical and non-technical audiences can understand, and connect them back to our main research question.
 
 
 ##### Contact and Further Information
+  **Gerald Balekaki**
+  *Email: gnbalekaki@gmail.com*
