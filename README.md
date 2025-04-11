@@ -1,6 +1,6 @@
 ### Capstone Project: ML Model to detect credit card Fraud transactions (Initial Report). 
 
-**Gerald Balekaki**
+Author: **Gerald Balekaki**
 
 #### Executive summary
 There is a lack of public available datasets on financial services and specially in the emerging mobile money transactions domain. Financial datasets are important to many researchers and in particular to us performing research in the domain of fraud detection. Part of the problem is the intrinsically private nature of financial transactions, that leads to no publicly available datasets.
@@ -31,7 +31,7 @@ In our preliminary study, we examined the “creditFraud” dataset, which conta
 
 The target variable is “isFraud”, where 0 represents legitimate transactions and 1 indicates fraudulent ones. The class distribution is highly imbalanced, with 99.88% of transactions being legitimate and only 0.012% labeled as fraud. This imbalance is clearly illustrated in our class distribution plot. We also visualized the transaction amount distribution, highlighting the sparse but significant presence of fraudulent transactions (shown as red dots).
 
-In addition, we compared the “isFraud” and “isFlaggedFraud” fields to understand the overlap. Out of 8,213 transactions labeled as fraud, only 16 were flagged as such, and all 16 were indeed fraudulent—none were false positives. Interestingly, 13 of these 16 flagged frauds involved large transaction amounts, suggesting a pattern. Only 3 involved amounts below 5 million (as shown in our transaction amount distribution plot), indicating that large transactions may be a key fraud indicator.
+In addition, we compared the “isFraud” and “isFlaggedFraud” fields to understand the overlap. Out of 8,213 transactions labeled as fraud, only 16 were flagged as such, and all 16 were indeed fraudulent—none were false positives. Interestingly, 13 of these 16 flagged frauds involved large transaction amounts, suggesting a pattern. Only 3 involved amounts below 5 million (refer to the red dots in our transaction amount distribution plot), indicating that large transactions may be a key fraud indicator.
 
 We trained several popular classification models tailored for binary classification, including Decision Tree, k-NN, Naive Bayes, Logistic Regression, SVM, and Neural Networks. Most classifiers, with optimized hyperparameters via GridSearchCV, performed exceptionally well—achieving around 99.9% accuracy in both cross-validation (with negligible variance) and test performance, showing strong generalization.
 
