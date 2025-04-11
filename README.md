@@ -27,7 +27,15 @@ Next, we train and model the data using a variety of supervised learning algorit
 Each model is evaluated individually based on performance metrics under different parameter configurations. Additionally, we explore anomaly detection techniques to address class imbalance. Model performance is assessed using evaluation metrics such as the classification report and confusion matrix, focusing on precision, recall, and F1-score. Finally, we conclude by summarizing key insights and interesting findings from our analysis. 
 
 #### Results
-What did your research find?
+In our preliminary study, we examined the “creditFraud” dataset, which contains 6,362,620 records across 11 features, including integer, object, and float data types. Due to the dataset’s size, we sampled 50,000 records for model training, but our visualizations reflect the entire dataset.
+
+The target variable is “isFraud”, where 0 represents legitimate transactions and 1 indicates fraudulent ones. The class distribution is highly imbalanced, with 99.88% of transactions being legitimate and only 0.012% labeled as fraud. This imbalance is clearly illustrated in our class distribution plot. We also visualized the transaction amount distribution, highlighting the sparse but significant presence of fraudulent transactions (shown as red dots).
+
+We compared the “isFraud” and “isFlaggedFraud” fields to understand the overlap. Out of 8,213 transactions labeled as fraud, only 16 were flagged as such, and all 16 were indeed fraudulent—none were false positives. Interestingly, 13 of these 16 flagged frauds involved large transaction amounts, suggesting a pattern. Only 3 involved amounts below 5 million (as shown in our transaction amount distribution plot), indicating that large transactions may be a key fraud indicator.
+
+We trained several popular classification models tailored for binary classification, including Decision Tree, k-NN, Naive Bayes, Logistic Regression, SVM, and Neural Networks. Most classifiers, with optimized hyperparameters via GridSearchCV, performed exceptionally well—achieving around 99.9% accuracy in both cross-validation (with negligible variance) and test performance, showing strong generalization.
+
+In contrast, the Naive Bayes classifier showed moderate performance. With its best hyperparameter (var_smoothing = 1e-07), it achieved a cross-validation accuracy of 69.4% (±6.7%) and a test accuracy of 66.0%. The higher standard deviation in CV results suggests sensitivity to data splits, and the lower test accuracy implies challenges with generalization.
 
 #### Next steps
 We suggest running a few more tests, especially to check how often transactions are wrongly flagged as fraud or missed. It’s worth looking deeper when a model seems too perfect. We might also try simpler models if they perform just as well. Finally, we plan to present our findings in a clear way that both technical and non-technical audiences can understand, and connect them back to our main research question.
