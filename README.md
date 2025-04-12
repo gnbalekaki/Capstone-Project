@@ -16,7 +16,11 @@ o	How can we classify credit card transactions as fraudulent or non-fraudulent b
 #### Data Sources
 o	The data will be sourced from publicly available datasets such as the **Kaggle Credit Card Fraud Detection dataset**, or, with proper authorization, transaction data from financial institutions.
   - Refer to the link:  https://www.kaggle.com/datasets/ealaxi/paysim1
-    
+How to Download the Dataset
+
+o	Use the Google Drive link provided below to download the CSV dataset. Once downloaded, unzip and copy the file into the data folder within the project repository.
+  - https://drive.google.com/file/d/1FAnOsdPhlpeeZ7MUmH96fzyOe2tOD25V/view?usp=drive_link
+    - *Note: This approach is necessary due to GitHub’s upload limit of 100MB, whereas our dataset is approximately 480MB.*
 
 #### Methodology
 
