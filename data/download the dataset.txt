@@ -1,0 +1,5 @@
+##### How to Download the Dataset
+-  Use the Google Drive link provided below to download the CSV dataset. Once downloaded, unzip and copy the file into the data folder within the project repository.
+  -  https://drive.google.com/file/d/1FAnOsdPhlpeeZ7MUmH96fzyOe2tOD25V/view?usp=drive_link 
+
+*(Note: This approach is necessary due to GitHub’s upload limit of 100MB, whereas our dataset is approximately 480MB).*
